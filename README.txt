@@ -51,6 +51,14 @@ it to the script with --videoid. If you don't know the video ID, just pass
 the script the URL of the individual video page with --url. The script will
 download the HTML and find the video ID automatically.
 
+
+Packages
+
+You can find packages for vessel-dl at the following locations:
+
+- Arch User Repository: https://aur.archlinux.org/packages/vessel-dl/
+
+
 Disclaimers
 
 I take no responsibility for any actions that Vessel may take against your
