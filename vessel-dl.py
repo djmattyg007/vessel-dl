@@ -59,8 +59,12 @@ def vessel_api_video_sources(videodata):
     video_item = None
     for item in videodata["assets"]:
         if item["type"] == "video" and item["is_actual_video"] == True:
-            video_item = item
-            break
+            if item["sources"][0]["bitrate"] is not None and "?" in item["sources"][0]["location"]:
+                video_item = item
+                break
+            if item["sources"][1]["bitrate"] is not None and "?" in item["sources"][1]["location"]:
+                video_item = item
+                break
     if not video_item:
         raise ValueError("Cannot find actual video data in API response.")
     sources = [s for s in video_item["sources"] if s["bitrate"] is not None]
