@@ -4,7 +4,7 @@ import sys
 from argparse import ArgumentParser
 import requests
 
-USER_AGENT = "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36"
+USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36"
 
 def get_args():
     parser = ArgumentParser(description="Obtain direct download links for Vessel videos.")
